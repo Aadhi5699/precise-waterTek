@@ -8,7 +8,7 @@ export const NAV_LINKS = [
     { label: 'Solutions', href: '#solutions' },
     { label: 'Technology', href: '#technology' },
     { label: 'Impact', href: '#impact' },
-    { label: 'Case Studies', href: '#case-studies' },
+    { label: 'Testimonials', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
 ]
 
@@ -20,10 +20,7 @@ export const HERO_CONTENT = {
         line3: 'Sustainable Future.',
     },
     subtext: '', // Empty in the original code
-    ctaButtons: {
-        primary: 'Explore Solutions',
-        secondary: 'View Case Studies',
-    },
+
     stats: [
         { value: '500M+', label: 'Liters Treated Daily' },
         { value: '30+', label: 'Countries Served' },
@@ -174,39 +171,29 @@ export const PROCESS_CONTENT = {
     ],
 }
 
-export const CASE_STUDIES_CONTENT = {
-    badge: 'Case Studies',
-    titleMain: 'Transforming Water,',
-    titleHighlight: ' Globally',
-    description: 'Real projects. Measurable impact. Explore how Precise WaterTek has solved complex water challenges across the world.',
-    cta: 'View all case studies',
-    caseStudies: [
+export const TESTIMONIALS_CONTENT = {
+    badge: 'Testimonials',
+    titleMain: 'Trusted by',
+    titleHighlight: ' Industry Leaders',
+    description: 'What experts and partners say about our water innovation and engineering excellence.',
+    testimonials: [
         {
-            title: 'Singapore NEWater Advanced Reuse Facility',
-            location: 'Singapore',
-            category: 'Municipal',
-            description: 'Designed and deployed a complete tertiary water reclamation system treating 500,000 m³/day for Singapore\'s national water reuse program.',
-            outcome: '40% reduction in water import dependency',
-            imageUrl: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=80',
-            badge: 'Award Winning',
+            quote: 'An epitome of sincerity and commitment and with the decades of experience and knowledge in water and waste water technology, Vidhya will deliver value to her clients.',
+            author: 'Sudheer Kumar M',
+            designation: 'Head – Desalination',
+            company: 'Jakson Green Limited',
         },
         {
-            title: 'Gulf Desalination Mega-Plant',
-            location: 'UAE, Middle East',
-            category: 'Desalination',
-            description: 'Pioneered a 350 MW solar-powered reverse osmosis desalination facility delivering freshwater to 1.2 million residents.',
-            outcome: '1.2M residents supplied daily',
-            imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80',
-            badge: 'Sustainable',
+            quote: 'R. Vidhya made a key contribution to the development of an energy-efficient CFRO brine concentration platform. Her innovative integration of energy recovery technology significantly improved system efficiency and demonstrated exceptional process engineering insight.',
+            author: 'Richard Lindsay Stover',
+            designation: 'CTO',
+            company: 'GP Water LLC',
         },
         {
-            title: 'Rhine Industrial Water Recovery',
-            location: 'Germany, Europe',
-            category: 'Industrial',
-            description: 'Implemented closed-loop industrial wastewater recovery at Germany\'s largest chemical complex, achieving 95% water reclamation.',
-            outcome: '95% water reclamation rate',
-            imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&auto=format&fit=crop&q=80',
-            badge: 'Zero Discharge',
+            quote: 'Her work on advanced reverse osmosis process design reflects strong innovation and engineering depth. The energy-saving approach she developed has practical impact across desalination and industrial water treatment applications.',
+            author: 'Richard Lindsay Stover',
+            designation: 'Former CTO',
+            company: 'Gradiant Corporation',
         },
     ],
 }

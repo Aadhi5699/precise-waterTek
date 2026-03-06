@@ -3,7 +3,7 @@ import Hero from './sections/Hero'
 import Solutions from './sections/Solutions'
 import ProcessFlow from './sections/ProcessFlow'
 import Statistics from './sections/Statistics'
-import CaseStudies from './sections/CaseStudies'
+import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './components/Footer'
 
@@ -15,7 +15,7 @@ function App() {
             <Solutions />
             <ProcessFlow />
             <Statistics />
-            <CaseStudies />
+            <Testimonials />
             <Contact />
             <Footer />
         </div>

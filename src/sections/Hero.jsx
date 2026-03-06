@@ -59,30 +59,7 @@ export default function Hero() {
                     {HERO_CONTENT.subtext}
                 </motion.p>
 
-                {/* CTA Buttons */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.7 }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-4"
-                >
-                    <a
-                        href="#solutions"
-                        className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-2xl hover:shadow-2xl hover:shadow-teal-500/30 hover:-translate-y-1 transition-all duration-300 text-base"
-                    >
-                        {HERO_CONTENT.ctaButtons.primary}
-                        <FiArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                    </a>
-                    <a
-                        href="#case-studies"
-                        className="group flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-2xl hover:bg-white/15 hover:border-teal-400/40 hover:-translate-y-1 transition-all duration-300 text-base"
-                    >
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                            <FiPlay className="text-teal-300 text-xs ml-0.5" />
-                        </div>
-                        {HERO_CONTENT.ctaButtons.secondary}
-                    </a>
-                </motion.div>
+
 
                 {/* Stats Row */}
                 <motion.div
