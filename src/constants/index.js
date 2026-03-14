@@ -28,22 +28,6 @@ export const HERO_CONTENT = {
         { value: '75+', label: 'Engineering Deliverables' },
     ],
 }
-/* export const HERO_CONTENT = {
-    badge: 'Leading Water Innovation Since 2025',
-    mainTitle: {
-        line1: 'Pure Water.',
-        line2: 'Precise Technology.',
-        line3: 'Sustainable Future.',
-    },
-    subtext: '', // Empty in the original code
-
-    stats: [
-        { value: '500M+', label: 'Liters Treated Daily' },
-        { value: '30+', label: 'Countries Served' },
-        { value: '99.9%', label: 'Purity Rate' },
-    ],
-} */
-
 export const SOLUTIONS_CONTENT = {
     badge: 'Our Expertise',
     titleMain: 'End-to-End',
