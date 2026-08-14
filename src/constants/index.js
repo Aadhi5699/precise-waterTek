@@ -24,7 +24,7 @@ export const HERO_CONTENT = {
 
     stats: [
         { value: '11+', label: 'Industrial Sectors' },
-        { value: '2+', label: 'Countries Served' },
+        { value: '3+', label: 'Countries Served' },
         { value: '75+', label: 'Engineering Deliverables' },
     ],
 }
@@ -112,10 +112,10 @@ export const STATISTICS_CONTENT = {
             decimal: 0,
         },
         {
-            value: 2,
+            value: 3,
             suffix: '',
             label: 'Global Regions',
-            sublabel: 'Projects in India, UAE',
+            sublabel: 'Projects in India, Iraq, Greenland',
             decimal: 0,
         },
         {
@@ -139,7 +139,7 @@ export const PROCESS_CONTENT = {
             id: '01',
             icon: FiEdit3,
             title: 'Crescent Engineering FZE,Dubai',
-            description: 'Post Order Process and Mechanical Engineering for Refinery Wastewater Treatment.',
+            description: 'Post Order Process and Mechanical Engineering for Refinery Wastewater Treatment Plant in Iraq',
             color: 'from-blue-500 to-cyan-400',
             glow: 'shadow-blue-500/30',
         },
@@ -166,6 +166,14 @@ export const PROCESS_CONTENT = {
             description: ' Post order UF Skid Engineering for multiple UF skid capacities and configurations, Isometric Drawings & Piping BOQ, Skid Structural GA drawing, Foundation drawing, etc',
             color: 'from-emerald-400 to-teal-400',
             glow: 'shadow-emerald-500/30',
+        },
+        {
+            id: '05',
+            icon: FiDatabase,
+            title: 'U.S.-Based Water & Wastewater Treatment Solutions Provider',
+            description: 'Executed Process Engineering and developed the Control Philosophy, including review and validation of PLC simulation and functional testing for a containerized desalination plant located in Greenland.',
+            color: 'from-blue-400 to-indigo-500',
+            glow: 'shadow-indigo-500/30',
         },
     ],
 }

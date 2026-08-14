@@ -45,12 +45,13 @@ export default function ProcessFlow() {
                 </motion.div>
 
                 {/* Process Steps */}
-                <div className="relative">
-                    {/* Connector line */}
+                <div className="relative flex flex-col gap-6">
+                    {/* Connector line — row 1 */}
                     <div className="hidden lg:block absolute top-[4.5rem] left-[13%] right-[13%] h-0.5 bg-gradient-to-r from-blue-500/40 via-teal-400/60 to-emerald-400/40" />
 
+                    {/* Row 1 — first 4 cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-                        {PROCESS_CONTENT.steps.map((step, index) => (
+                        {PROCESS_CONTENT.steps.slice(0, 4).map((step, index) => (
                             <motion.div
                                 key={step.id}
                                 initial={{ opacity: 0, y: 50 }}
@@ -77,11 +78,40 @@ export default function ProcessFlow() {
                                 </div>
 
                                 {/* Arrow for mobile */}
-                                {index < PROCESS_CONTENT.steps.length - 1 && (
-                                    <div className="lg:hidden flex justify-center my-3 text-teal-400/50">
-                                        <FiArrowRight className="rotate-90 text-xl" />
+                                <div className="lg:hidden flex justify-center my-3 text-teal-400/50">
+                                    <FiArrowRight className="rotate-90 text-xl" />
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    {/* Row 2 — 5th card centered */}
+                    <div className="flex justify-center">
+                        {PROCESS_CONTENT.steps.slice(4).map((step, index) => (
+                            <motion.div
+                                key={step.id}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={inView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.6, delay: 4 * 0.15 + index * 0.15 }}
+                                className="group w-full sm:w-1/2 lg:w-1/4"
+                            >
+                                {/* Card */}
+                                <div className="glass-card p-6 text-center relative overflow-hidden hover:border-teal-400/30 h-full flex flex-col">
+                                    {/* Step number */}
+                                    <div className="absolute top-4 right-4 text-white/10 text-5xl font-bold font-['Outfit'] leading-none">
+                                        {step.id}
                                     </div>
-                                )}
+
+                                    {/* Icon */}
+                                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} bg-opacity-20 flex items-center justify-center mx-auto mb-4 shadow-xl ${step.glow} group-hover:scale-110 transition-transform duration-300`}
+                                        style={{ background: 'rgba(13,148,136,0.2)' }}
+                                    >
+                                        <step.icon className="text-teal-300 text-2xl" />
+                                    </div>
+
+                                    <h3 className="text-white font-semibold text-base mb-2 font-['Outfit']">{step.title}</h3>
+                                    <p className="text-white/50 text-xs leading-relaxed flex-grow">{step.description}</p>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
